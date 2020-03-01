@@ -37,7 +37,11 @@ public class ScwUserApplicationTests {
         querys.put("mobile", "18642866683");
         querys.put("param", "code:"+666666);
         querys.put("tpl_id", "TP1711063");
-        smsTemplate.sendMessage(querys);
+        try {
+            smsTemplate.sendMessage(querys);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
