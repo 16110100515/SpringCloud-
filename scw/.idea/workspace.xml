@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f8dc817-1a03-4dc0-90fa-608ec39f5a2f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Repositories\maven2" />
+        <option name="mavenHome" value="D:/Server/maven" />
+        <option name="userSettingsFile" value="D:\Server\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UpDZ394ErsRcfG8KJs1ltSropF" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/controller" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.scw.service" />
+      <recent name="com.atguigu.src.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\forstudy\Desktop\scw\scw-user\src\main\java\com\atguigu\scw\controller" />
+      <recent name="C:\Users\forstudy\Desktop\scw\scw-webui\src\main\resources\templates\pages" />
+      <recent name="C:\workplace_idea\scw\scw-user\src\main\java\com\atguigu\scw\vo" />
+      <recent name="C:\workplace_idea\scw\scw-common\src\main\java\com\atguigu\scw\common\utils" />
+      <recent name="C:\workplace_idea\scw\scw-project\src\main\java\com\atguigu\scw\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.scw.webui.vo" />
+      <recent name="com.atguigu.scw.vo" />
+      <recent name="com.atguigu.scw.webui.bean" />
+      <recent name="com.atguigu.src" />
+      <recent name="com.atguigu.scw" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workplace_idea\scw\scw-user\src\main\java\com\atguigu\scw" />
+      <recent name="C:\workplace_idea\scw\scw-user\src\main\resources\mybaits" />
+      <recent name="C:\workplace_idea\scw\scw-project\src\main\resources\mybaits" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ScwUserApplicationTests.testSendMessage2">
+    <configuration name="MBGrunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.scw.MBGrunner" />
+      <module name="scw-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.scw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectInfoServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.scw.service.impl.ProjectInfoServiceImpl" />
+      <module name="scw-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.scw.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScwUserApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scw-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.scw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.scw" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.scw.ScwUserApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScwUserApplicationTests.testSendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scw-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.scw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.scw" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.scw.ScwUserApplicationTests" />
+      <option name="METHOD_NAME" value="testSendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScwUserApplicationTests.testSendMessage2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scw-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.scw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.scw" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.scw.ScwUserApplicationTests" />
+      <option name="METHOD_NAME" value="testSendMessage2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScwOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.scw.ScwOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScwProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.scw.ScwProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScwRegisterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-register" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.scw.ScwRegisterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScwUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.scw.ScwUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScwWebuiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-webui" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.scw.webui.ScwWebuiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MBGrunner" />
+      <item itemvalue="Application.ProjectInfoServiceImpl" />
+      <item itemvalue="JUnit.ScwUserApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.ScwUserApplicationTests.testSendMessage" />
+      <item itemvalue="JUnit.ScwUserApplicationTests.testSendMessage2" />
+      <item itemvalue="Spring Boot.ScwOrderApplication" />
+      <item itemvalue="Spring Boot.ScwProjectApplication" />
+      <item itemvalue="Spring Boot.ScwRegisterApplication" />
+      <item itemvalue="Spring Boot.ScwUserApplication" />
+      <item itemvalue="Spring Boot.ScwWebuiApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ScwUserApplicationTests.testSendMessage2" />
+        <item itemvalue="JUnit.ScwUserApplicationTests.testSendMessage" />
+        <item itemvalue="Application.ProjectInfoServiceImpl" />
+        <item itemvalue="Application.MBGrunner" />
+        <item itemvalue="JUnit.ScwUserApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.19535519" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@273dc6c0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@273dc6c0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@389c17cb" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f8dc817-1a03-4dc0-90fa-608ec39f5a2f" name="Default Changelist" comment="" />
+      <created>1576044694231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576044694231</updated>
+      <workItem from="1576044696994" duration="19308000" />
+      <workItem from="1576070779443" duration="307000" />
+      <workItem from="1576115069003" duration="7965000" />
+      <workItem from="1576129975967" duration="3032000" />
+      <workItem from="1576133043422" duration="267000" />
+      <workItem from="1576133465596" duration="30000" />
+      <workItem from="1576197999296" duration="12511000" />
+      <workItem from="1576284240601" duration="10025000" />
+      <workItem from="1576326088222" duration="14107000" />
+      <workItem from="1576406693736" duration="8181000" />
+      <workItem from="1576456034536" duration="18472000" />
+      <workItem from="1576542552375" duration="4334000" />
+      <workItem from="1576564600351" duration="17827000" />
+      <workItem from="1576592484448" duration="2562000" />
+      <workItem from="1576595076168" duration="1549000" />
+      <workItem from="1576629408326" duration="13803000" />
+      <workItem from="1576719704754" duration="20735000" />
+      <workItem from="1576802328943" duration="13906000" />
+      <workItem from="1576915160594" duration="1020000" />
+      <workItem from="1577347475166" duration="4844000" />
+      <workItem from="1582801859273" duration="1980000" />
+      <workItem from="1582817138873" duration="72000" />
+      <workItem from="1582873950952" duration="1586000" />
+      <workItem from="1582882035400" duration="81000" />
+      <workItem from="1582891313466" duration="4309000" />
+      <workItem from="1582962347859" duration="8639000" />
+      <workItem from="1583051182842" duration="3446000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
