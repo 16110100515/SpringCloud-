@@ -63,7 +63,6 @@ public class UserServiceImp implements UserService {
         TMemberExample example = new TMemberExample();
         example.createCriteria().andLoginacctEqualTo(loginacct);
         List<TMember> tMembers = tMemberMapper.selectByExample(example);
-        TMember member1 = new TMember();
 
         if (CollectionUtils.isEmpty(tMembers)||tMembers.size()>1){
             throw new UserAcctException("登入账号不存在");
@@ -72,7 +71,7 @@ public class UserServiceImp implements UserService {
         String encodPwd = member.getUserpswd();
         boolean matches = passwordEncoder.matches(userpswd, encodPwd);
         if (!matches){
-//            throw new UserAcctException("登入密码错误");
+            throw new UserAcctException("登入密码错误");
         }
         UserRespVo userRespVo = new UserRespVo();
         BeanUtils.copyProperties(member,userRespVo);

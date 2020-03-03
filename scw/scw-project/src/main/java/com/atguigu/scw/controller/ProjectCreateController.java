@@ -157,17 +157,27 @@ public class ProjectCreateController {
     }
 
 
-    @PostMapping("/upload")
-    @ApiOperation(value = "上传图片")
-    public AppResponse<Object> uploadPhoto(MultipartFile[] imgs){
-        if(ArrayUtils.isEmpty(imgs)){
-            return AppResponse.fail("上传失败","请选择图片后上传");
+    //imgs=图片1&imgs=图片2
+    @PostMapping("/uploadImgs")
+    public AppResponse<Object> uploadImgs(MultipartFile[] imgs){
+        if(ArrayUtils.isEmpty(imgs)) {
+            return AppResponse.fail("上传失败", "请选择图片后上传");
         }
-        List<String> imgPaths = new ArrayList<>();
-        for (MultipartFile img : imgs) {
-            String s = ossTemplate.uploadImg(img);
-            imgPaths.add(s);
+        List<String> imgPaths = new ArrayList<String>();
+        int successCount = 0;
+        int failCount = 0;
+        for (MultipartFile multipartFile : imgs) {
+            String uploadImg = ossTemplate.uploadImg(multipartFile);
+            if(uploadImg==null) {
+                failCount++;
+            }else {
+                successCount++;
+                imgPaths.add(uploadImg);
+            }
         }
+        log.warn("用户上传了{}张图片 , 成功了{}张 , 失败了{}张", imgs.length,successCount,failCount);
+        log.info("上传图片的路径：{}", imgPaths);
+
         return AppResponse.ok(imgPaths);
     }
 
