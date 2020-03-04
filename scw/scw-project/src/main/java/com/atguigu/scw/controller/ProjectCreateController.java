@@ -40,15 +40,19 @@ public class ProjectCreateController {
     ProjectService projectService;
 
     // 阅读并同意协议：初始化ProjectRedisStorageVo对象，分配唯一的token
-    @PostMapping("/init")
+    @PostMapping("/initProject")
     @ApiOperation(value = "项目初始创建")
     public AppResponse<Object> initProject(String accessToken){
-        UserRespVo objectFromRedis = ScwAppUtils.getObjectFromRedis(stringRedisTemplate, UserRespVo.class, accessToken);
-        if (objectFromRedis == null){
+        //验证登录状态
+        //根据token从redis中获取登录信息的对象
+        //String string = stringRedisTemplate.opsForValue().get(accessToken);
+        UserRespVo userRespVo = ScwAppUtils.getObjectFromRedis(stringRedisTemplate, UserRespVo.class, accessToken);
+        if (userRespVo == null){
             return AppResponse.fail("初始化发布项目失败","请登入后再发布项目");
         }
+        //初始化ProjectRedisStorageVo对象，分配projecttoken，存到redis中
         ProjectRedisStorageVo bigVo = new ProjectRedisStorageVo();
-        bigVo.setMemberid(objectFromRedis.getId());
+        bigVo.setMemberid(userRespVo.getId());
         bigVo.setAccessToken(accessToken);
         //生成临时token
         String projectToken ="project:create:temp"+ UUID.randomUUID().toString().replace("-","");

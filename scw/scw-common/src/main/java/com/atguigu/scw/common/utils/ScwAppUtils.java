@@ -33,4 +33,11 @@ public class ScwAppUtils {
 		stringRedisTemplate.opsForValue().set(token,jsonStr);
 	}
 
+
+	//将对象转为json字符串存到redis中的方法
+	public static <T>void setObjectToRedis(T t ,StringRedisTemplate stringRedisTemplate , String token) {
+		String jsonStr = JSON.toJSONString(t);
+		stringRedisTemplate.opsForValue().set(token, jsonStr);
+	}
+
 }

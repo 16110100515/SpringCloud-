@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4f8dc817-1a03-4dc0-90fa-608ec39f5a2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/ScwProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/ScwProjectApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-project/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-project/src/test/java/com/atguigu/scw/ScwProjectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/test/java/com/atguigu/scw/ScwProjectApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/controller/UserLoginRegistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/controller/UserLoginRegistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/service/imp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/service/imp/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scwparent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scwparent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-common/src/main/java/com/atguigu/scw/common/utils/ScwAppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-common/src/main/java/com/atguigu/scw/common/utils/ScwAppUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/controller/ProjectCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/controller/ProjectCreateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/BaseVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/BaseVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/ProjectRedisStorageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/ProjectRedisStorageVo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,12 +232,12 @@
       <item itemvalue="Application.ProjectInfoServiceImpl" />
       <item itemvalue="JUnit.ScwUserApplicationTests.testSendMessage" />
       <item itemvalue="JUnit.ScwUserApplicationTests.testSendMessage2" />
+      <item itemvalue="JUnit.ScwProjectApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.ScwOrderApplication" />
       <item itemvalue="Spring Boot.ScwProjectApplication" />
       <item itemvalue="Spring Boot.ScwRegisterApplication" />
       <item itemvalue="Spring Boot.ScwUserApplication" />
       <item itemvalue="Spring Boot.ScwWebuiApplication" />
-      <item itemvalue="JUnit.ScwProjectApplicationTests.contextLoads" />
     </list>
     <recent_temporary>
       <list>
@@ -260,17 +257,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@29d3edca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@cf0c7e00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@29d3edca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@94894b58" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@cf0c7e00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1acffb07" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@29d3edca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@91d39e8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@cf0c7e00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@28a14bf2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -320,7 +317,8 @@
       <workItem from="1583051182842" duration="3446000" />
       <workItem from="1583074825721" duration="3736000" />
       <workItem from="1583124079584" duration="10438000" />
-      <workItem from="1583216150562" duration="6786000" />
+      <workItem from="1583216150562" duration="7483000" />
+      <workItem from="1583322852433" duration="5424000" />
     </task>
     <task id="LOCAL-00001" summary="响应类封装加测试">
       <created>1583078214708</created>

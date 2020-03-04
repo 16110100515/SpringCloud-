@@ -10,8 +10,8 @@ import lombok.ToString;
 import java.util.List;
 
 /**
- * @author zya
- * @create 2019-12-18 15:26
+ * @author lsj
+ * @create 2020-03-04 15:26
  */
 @Data
 @AllArgsConstructor
@@ -19,7 +19,7 @@ import java.util.List;
 @ToString
 public class ProjectRedisStorageVo extends BaseVo {
     //全量   增量
-    private String projectToken;//项目的临时token
+    private String projectToken;//项目的临时token  以后项目发起的多步请求 都是通过此token获取redis中的 vo对象进行修改
     private Integer memberid;//会员id
     private List<Integer> typeids; //项目的分类id
     private List<Integer> tagids; //项目的标签id
