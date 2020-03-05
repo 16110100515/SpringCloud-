@@ -3,8 +3,8 @@ package com.atguigu.scw.service;
 import com.atguigu.scw.vo.ProjectRedisStorageVo;
 
 /**
- * @author zya
- * @create 2019-12-19 11:03
+ * @author lsj
+ * @create 2020-03-04 11:03
  */
 
 public interface ProjectService {

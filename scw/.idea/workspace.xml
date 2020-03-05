@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4f8dc817-1a03-4dc0-90fa-608ec39f5a2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-common/src/main/java/com/atguigu/scw/common/utils/ScwAppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-common/src/main/java/com/atguigu/scw/common/utils/ScwAppUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/controller/ProjectCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/controller/ProjectCreateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/BaseVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/BaseVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/ProjectRedisStorageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/ProjectRedisStorageVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/service/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/ProjectBaseInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-project/src/main/java/com/atguigu/scw/vo/ProjectBaseInfoVo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -257,17 +257,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@cf0c7e00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@abdfb7dc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@cf0c7e00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1acffb07" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@cf0c7e00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@28a14bf2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@abdfb7dc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@15adcdf3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -319,6 +314,7 @@
       <workItem from="1583124079584" duration="10438000" />
       <workItem from="1583216150562" duration="7483000" />
       <workItem from="1583322852433" duration="5424000" />
+      <workItem from="1583389143847" duration="10784000" />
     </task>
     <task id="LOCAL-00001" summary="响应类封装加测试">
       <created>1583078214708</created>

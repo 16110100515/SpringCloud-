@@ -62,19 +62,25 @@ public class ProjectCreateController {
     }
 
 //    第一步 ：收集项目信息，项目发起人信息
-    @PostMapping("/submit")
+    @PostMapping("/step1")
     @ApiOperation(value = "项目提交审核申请")
     public AppResponse<Object> confirmLegal(ProjectBaseInfoVo vo){
 //    检查登入状态
         String accessToken = vo.getAccessToken();
         UserRespVo objectFromRedis = ScwAppUtils.getObjectFromRedis(stringRedisTemplate, UserRespVo.class, accessToken);
         if (objectFromRedis == null){
-            return AppResponse.fail("初始化发布项目失败","请登入后再发布项目");
+            return AppResponse.fail("收集项目及发起人信息失败","登录超时");
         }
 //    获取redis中的bigVo
         ProjectRedisStorageVo bigVo = ScwAppUtils.getObjectFromRedis(stringRedisTemplate, ProjectRedisStorageVo.class, vo.getProjectToken());
 //    将接受的vo对象的属性值对拷给bigVo
-        BeanUtils.copyProperties(vo,bigVo);
+        if(bigVo==null) {
+            return AppResponse.fail("收集项目及发起人信息失败", "数据读取异常");
+        }
+        log.info("接受到的请求参数：{} ,从redis中获取的bigVo：{}" , vo , bigVo);
+        BeanUtils.copyProperties(vo, bigVo);
+        log.info("接受项目及发起人信息后的bigVo对象：{}", bigVo);
+
 //    价格修改后的bigVo重新设置到redis中覆盖之前的vo
         ScwAppUtils.setObjectToJson(bigVo,stringRedisTemplate,bigVo.getProjectToken());
         return AppResponse.ok(bigVo);
@@ -82,7 +88,14 @@ public class ProjectCreateController {
 
     //@ResponseBoby表示响应的数据转为json响应，@RequestBody表示需要接受json类型的请求数据并自动将json对象转为java中的对象
     //第二步 回报信息收集
-    @PostMapping("/return")
+    //入参参数类型：  简单类型(提交参数的name值和变量名一样可以自动入参)、POJO(提交参数的name值和pojo对象的属性名一样可以自动入参)
+    // ids=1,2,3,4  以,分割的参数字符串(使用@RequestParam("ids")List<Integer> ids)
+    // hobby=lanqiu&hobby=zuqiu(使用类型对应的数组接受 String[]hobby)
+    // 复杂类型的传参 ：提交回报集合时： 每个回报都有自己的一套参数      type=0&supportmoney=1&conetent=xxxx&type=1&supportmonet=100&content=sadasd
+    // 使用List<TReutrn> returns  接受，前端传递return回报数据时使用 json字符串提交即可
+    // [{type:0 , supportmoney:1 , conetnt:"xxx"},{type:0 , supportmoney:1 , conetnt:"xxx"},{type:0 , supportmoney:1 , conetnt:"xxx"}]
+    //@ResponseBoby表示响应的数据转为json响应，  @RequestBody 表示需要接受json类型的请求数据并自动将json对象转为java中的对象
+    @PostMapping("/step2")
     @ApiOperation(value = "添加项目回报档位")
     public AppResponse<Object> returnProject(@RequestBody List<ProjectReturnVo> rtnVos){
         if(CollectionUtils.isEmpty(rtnVos)){
@@ -93,7 +106,7 @@ public class ProjectCreateController {
         //    检查登入状态
         UserRespVo objectFromRedis = ScwAppUtils.getObjectFromRedis(stringRedisTemplate, UserRespVo.class, accessToken);
         if (objectFromRedis == null){
-            return AppResponse.fail("初始化发布项目失败","请登入后再发布项目");
+            return AppResponse.fail("收集回报信息失败","登录超时");
         }
 //        获取redis中的bigvo对象
         String projectToken = projectReturnVo.getProjectToken();
@@ -114,7 +127,7 @@ public class ProjectCreateController {
         return AppResponse.ok(bigVo);
     }
 
-    @PostMapping("/confirm/legal")
+    @PostMapping("/confirmSubmit")
     @ApiOperation(value = "确认项目及法人信息")
     public AppResponse<Object> projectSubmit(ProjectConfirmInfoVo vo){
        //检查登入状况
