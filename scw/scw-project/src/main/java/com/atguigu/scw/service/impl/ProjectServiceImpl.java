@@ -68,19 +68,16 @@ public class ProjectServiceImpl implements ProjectService {
         //批量插入
         projectImagesMapper.batchInsertProjectImages(imagesList);
         //TProjectTag
-        //TProjectType
         List<Integer> tagids = bigVo.getTagids();
-        List<Integer> typeids = bigVo.getTypeids();
         projectTagMapper.batchInsetProjectTagids(projectId,tagids);
+        //TProjectType
+        List<Integer> typeids = bigVo.getTypeids();
         projectTypeMapper.batchInsetProjectTypeids(projectId,typeids);
 
 
         //TReturn
-        List<TReturn> projectReturns = bigVo.getProjectReturns();
-        for (TReturn projectReturn : projectReturns) {
-            projectReturn.setProjectid(projectId);
-            tReturnMapper.insertSelective(projectReturn);
-        }
+        List<TReturn> returns = bigVo.getProjectReturns();
+        tReturnMapper.batchInsertProjectReturns(projectId,returns);
         //TProjectInitiator
         TProjectInitiator projectInitiator = bigVo.getProjectInitiator();
         projectInitiator.setProjectid(projectId);

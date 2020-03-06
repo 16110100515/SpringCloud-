@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableDiscoveryClient
 @SpringBootApplication
 @MapperScan(basePackages="com.atguigu.scw.mapper")
-@EnableTransactionManagement
+@EnableTransactionManagement//启动事务管理
 public class ScwProjectApplication {
 
     public static void main(String[] args) {

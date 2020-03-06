@@ -15,6 +15,20 @@
     <result column="rtndate" jdbcType="INTEGER" property="rtndate" />
   </resultMap>
 
+  <!--
+   //批量保存项目回报信息
+	void batchInsertProjectReturns(@Param("projectid")Integer projectId, @Param("returns")List<TReturn> returns);
+   -->
+  <insert id="batchInsertProjectReturns">
+    INSERT INTO t_return(projectid , `type` , supportmoney , content , `count` , signalpurchase ,
+    purchase  ,freight , invoice , rtndate) VALUES
+    <foreach collection="returns" item="rtn" separator=",">
+      (#{projectId} ,#{rtn.type} , #{rtn.supportmoney} , #{rtn.content} ,
+      #{rtn.count} , #{rtn.signalpurchase} , #{rtn.purchase},#{rtn.freight},#{rtn.invoice}
+      ,#{rtn.rtndate} )
+    </foreach>
+
+  </insert>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

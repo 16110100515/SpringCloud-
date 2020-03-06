@@ -27,5 +27,6 @@ public interface TReturnMapper {
     int updateByPrimaryKeySelective(TReturn record);
 
     int updateByPrimaryKey(TReturn record);
-
+    //批量保存项目汇报消息
+    void batchInsertProjectReturns(@Param("projectId") Integer projectId, @Param("returns") List<TReturn> returns);
 }
