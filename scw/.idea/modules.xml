@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/alipay.trade.page.pay-JAVA-UTF-8/alipay.trade.page.pay-JAVA-UTF-8.iml" filepath="$PROJECT_DIR$/alipay.trade.page.pay-JAVA-UTF-8/alipay.trade.page.pay-JAVA-UTF-8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-provider-movie/cloud-provider-movie.iml" filepath="$PROJECT_DIR$/cloud-provider-movie/cloud-provider-movie.iml" />
       <module fileurl="file://$PROJECT_DIR$/scw-common/scw-common.iml" filepath="$PROJECT_DIR$/scw-common/scw-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/scw-order/scw-order.iml" filepath="$PROJECT_DIR$/scw-order/scw-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/scw-project/scw-project.iml" filepath="$PROJECT_DIR$/scw-project/scw-project.iml" />

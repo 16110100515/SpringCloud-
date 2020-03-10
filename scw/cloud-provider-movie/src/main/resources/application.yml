@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: cloud-provider-movie
+    
+    
+server:
+  port: 8001
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/       #将当前客户端注册给指定的注册中心
+  instance:
+    prefer-ip-address: true
+    ip-address: localhost

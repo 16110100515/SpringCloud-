@@ -10,10 +10,11 @@
         <option value="$PROJECT_DIR$/scw-order/pom.xml" />
         <option value="$PROJECT_DIR$/scw-common/pom.xml" />
         <option value="$PROJECT_DIR$/scw-webui/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-movie/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
