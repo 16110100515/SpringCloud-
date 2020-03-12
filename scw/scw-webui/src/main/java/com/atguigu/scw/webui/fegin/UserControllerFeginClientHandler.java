@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @author zya
- * @create 2019-12-17 11:50
+ * @author lsj
+ * @create 2020-03-12 18:55
  */
 @Service
 public class UserControllerFeginClientHandler implements UserControllerFeginClient {

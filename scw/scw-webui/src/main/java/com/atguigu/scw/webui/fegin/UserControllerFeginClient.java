@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 /**
- * @author zya
- * @create 2019-12-16 19:07
+ * @author lsj
+ * @create 2020-03-12 18:50
  */
 @FeignClient(value = "SCW-USER",fallback = UserControllerFeginClientHandler.class)
 public interface UserControllerFeginClient {

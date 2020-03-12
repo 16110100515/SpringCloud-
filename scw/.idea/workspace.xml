@@ -7,13 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f8dc817-1a03-4dc0-90fa-608ec39f5a2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alipay.trade.page.pay-JAVA-UTF-8/alipay.trade.page.pay-JAVA-UTF-8.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/config/AppWebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/config/AppWebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/controller/DispatcherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/controller/DispatcherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/fegin/UserControllerFeginClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/fegin/UserControllerFeginClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/fegin/UserControllerFeginClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/fegin/UserControllerFeginClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/vo/HotProjectRespVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/vo/HotProjectRespVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/resources/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/resources/templates/pages/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,25 +84,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-provider-movie/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/bean" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.atguigu.scw.service" />
-      <recent name="com.atguigu.src.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workplace_idea\scw\scw-user\src\main\java\com\atguigu\scw" />
+      <recent name="C:\workplace_idea\scw\scw-user\src\main\resources\mybaits" />
+      <recent name="C:\workplace_idea\scw\scw-project\src\main\resources\mybaits" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\forstudy\Desktop\springcloudGIT管理\SpringCloud-\scw\scw-webui\src\main\java\com\atguigu\scw\webui\bean" />
       <recent name="C:\Users\forstudy\Desktop\scw\scw-user\src\main\java\com\atguigu\scw\controller" />
       <recent name="C:\Users\forstudy\Desktop\scw\scw-webui\src\main\resources\templates\pages" />
       <recent name="C:\workplace_idea\scw\scw-user\src\main\java\com\atguigu\scw\vo" />
       <recent name="C:\workplace_idea\scw\scw-common\src\main\java\com\atguigu\scw\common\utils" />
-      <recent name="C:\workplace_idea\scw\scw-project\src\main\java\com\atguigu\scw\utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.atguigu.scw.webui.vo" />
@@ -109,10 +112,9 @@
       <recent name="com.atguigu.src" />
       <recent name="com.atguigu.scw" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workplace_idea\scw\scw-user\src\main\java\com\atguigu\scw" />
-      <recent name="C:\workplace_idea\scw\scw-user\src\main\resources\mybaits" />
-      <recent name="C:\workplace_idea\scw\scw-project\src\main\resources\mybaits" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.scw.service" />
+      <recent name="com.atguigu.src.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,8 +335,8 @@
       <item itemvalue="Spring Boot.ScwRegisterApplication" />
       <item itemvalue="Spring Boot.ScwUserApplication" />
       <item itemvalue="Spring Boot.ScwWebuiApplication" />
-      <item itemvalue="Tomcat Server.tomcat8.5" />
       <item itemvalue="Spring Boot.CloudProviderMovieApplication" />
+      <item itemvalue="Tomcat Server.tomcat8.5" />
     </list>
     <recent_temporary>
       <list>
@@ -349,17 +351,17 @@
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.19535519" />
+        <option name="contentProportion" value="0.3608361" />
         <treeState>
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d99fa298" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bc8f21e1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d99fa298" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4611961d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bc8f21e1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@3ed613f0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -414,7 +416,10 @@
       <workItem from="1583389143847" duration="10784000" />
       <workItem from="1583482767327" duration="6827000" />
       <workItem from="1583822261698" duration="778000" />
-      <workItem from="1583824270200" duration="4658000" />
+      <workItem from="1583824270200" duration="5741000" />
+      <workItem from="1583905444608" duration="5106000" />
+      <workItem from="1583990419746" duration="570000" />
+      <workItem from="1584017491216" duration="4520000" />
     </task>
     <task id="LOCAL-00001" summary="响应类封装加测试">
       <created>1583078214708</created>

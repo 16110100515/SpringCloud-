@@ -2,17 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="scw-register" />
-        <module name="cloud-provider-movie" />
-        <module name="scw-webui" />
-        <module name="scw-project" />
-        <module name="scw-common" />
-        <module name="scw-user" />
         <module name="scw-order" />
+        <module name="cloud-provider-movie" />
+        <module name="scw-common" />
+        <module name="scw-webui" />
+        <module name="scw-register" />
+        <module name="scw-user" />
+        <module name="scw-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
