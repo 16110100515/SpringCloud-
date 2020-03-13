@@ -3,6 +3,7 @@ package com.atguigu.scw.webui.controller.user;
 import com.atguigu.scw.common.bean.AppResponse;
 import com.atguigu.scw.webui.fegin.UserControllerFeginClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +21,9 @@ import javax.servlet.http.HttpSession;
 public class UserController {
     @Resource
     UserControllerFeginClient userControllerFeginClient;
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
+
     @PostMapping("/doLogin")
     public String doLogin(HttpSession session,String loginacct, String userpswd, Model model){
         //远程调用scw-user项目处理登入的业务
@@ -33,7 +37,9 @@ public class UserController {
             if (session.getAttribute("ref")!=null){
                 return "redirect:"+session.getAttribute("ref");
             }else {
-                return "redirect:/index";
+//                return "redirect:/index";
+                return "redirect:/toBlogsIndex";
+//                return "blogs/index";  //刷新的时候表单会重复提交
             }
         }else{
             //登入失败，设置错误消息到域中，转发到登入页面提示
@@ -42,4 +48,12 @@ public class UserController {
             return "pages/login";
         }
     }
+
+    @RequestMapping("logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+//        stringRedisTemplate.delete("user:login:");//这里删不掉，需要再scw-user中处理
+        return "redirect:/index";
+    }
+
 }
