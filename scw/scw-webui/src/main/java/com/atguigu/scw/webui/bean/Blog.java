@@ -1,4 +1,4 @@
-package com.atguigu.scw.webui.vo;
+package com.atguigu.scw.webui.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -40,6 +40,7 @@ public class Blog {
     private Type type;
     private List<Tag> tags = new ArrayList<>();
     private User user;
+    private List<Comment> comments = new ArrayList<>();
 
 
 }

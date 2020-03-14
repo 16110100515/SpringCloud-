@@ -1,4 +1,4 @@
-package com.atguigu.scw.webui.vo;
+package com.atguigu.scw.webui.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

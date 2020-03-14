@@ -13,6 +13,10 @@ import java.util.List;
 @Service
 public class UserControllerFeginClientHandler implements UserControllerFeginClient {
     @Override
+    public AppResponse<Object> login(String username, String password) {
+        return AppResponse.fail("登入失败","远程调用超时，连接失败");
+    }
+    @Override
     public AppResponse<Object> doLogin(String loginacct, String userpswd) {
         return AppResponse.fail("登入失败","远程调用超时，连接失败");
     }

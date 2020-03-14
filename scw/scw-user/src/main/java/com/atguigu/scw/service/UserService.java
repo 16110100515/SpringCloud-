@@ -1,5 +1,6 @@
 package com.atguigu.scw.service;
 
+import com.atguigu.scw.bean.User;
 import com.atguigu.scw.vo.UserAddressVo;
 import com.atguigu.scw.vo.UserRegistVo;
 import com.atguigu.scw.vo.UserRespVo;
@@ -7,8 +8,8 @@ import com.atguigu.scw.vo.UserRespVo;
 import java.util.List;
 
 /**
- * @author zya
- * @create 2019-12-14 9:22
+ * @author LSJ
+ * @create 2020-03-14 15:05
  */
 
 public interface UserService {
@@ -17,4 +18,6 @@ public interface UserService {
     UserRespVo doLogin(String loginacct, String userpswd);
 
     List<UserAddressVo> getUserAddress(Integer userRespVoId);
+
+    User checkUser(String username,String password);
 }

@@ -1,12 +1,11 @@
 package com.atguigu.scw.service.imp;
 
-import com.atguigu.scw.bean.TMember;
-import com.atguigu.scw.bean.TMemberAddress;
-import com.atguigu.scw.bean.TMemberAddressExample;
-import com.atguigu.scw.bean.TMemberExample;
+import com.atguigu.scw.bean.*;
 import com.atguigu.scw.exception.UserAcctException;
 import com.atguigu.scw.mapper.TMemberAddressMapper;
 import com.atguigu.scw.mapper.TMemberMapper;
+//import com.atguigu.scw.mapper.UserMapper;
+import com.atguigu.scw.mapper.UserMapper;
 import com.atguigu.scw.service.UserService;
 import com.atguigu.scw.vo.UserAddressVo;
 import com.atguigu.scw.vo.UserRegistVo;
@@ -33,6 +32,8 @@ public class UserServiceImp implements UserService {
     PasswordEncoder passwordEncoder;
     @Resource
     TMemberAddressMapper tMemberAddressMapper;
+    @Resource
+    UserMapper userMapper;
 
     @Override
     public void saveUser(UserRegistVo vo) {
@@ -88,6 +89,13 @@ public class UserServiceImp implements UserService {
             userAddressVos.add(new UserAddressVo(userRespVoId,tMemberAddress.getAddress()));
         }
         return userAddressVos;
+    }
+
+
+
+    @Override
+    public User checkUser(String username, String password) {
+        return userMapper.checkUser(username,password);
     }
 
 }

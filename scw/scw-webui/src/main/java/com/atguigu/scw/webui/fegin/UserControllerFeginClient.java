@@ -15,6 +15,8 @@ import java.util.List;
  */
 @FeignClient(value = "SCW-USER",fallback = UserControllerFeginClientHandler.class)
 public interface UserControllerFeginClient {
+    @PostMapping("/admin/doLogin")
+    AppResponse<Object> login(@RequestParam("username") String username, @RequestParam("password") String password);
     @PostMapping("/user/doLogin")
     AppResponse<Object> doLogin(@RequestParam("loginacct") String loginacct,@RequestParam("userpswd") String userpswd);
     @GetMapping("/user/address")

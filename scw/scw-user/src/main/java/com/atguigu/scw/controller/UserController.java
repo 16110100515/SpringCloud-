@@ -39,6 +39,10 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
+	@RequestMapping("testUser")
+	public void testUser(){
+		userService.checkUser("1111","2222");
+	}
 	//3、处理登录的方法
 	@ApiOperation("登录方法")
 	@PostMapping("/doLogin")
