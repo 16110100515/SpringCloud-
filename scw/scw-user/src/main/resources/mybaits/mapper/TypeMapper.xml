@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.scw.mapper.TypeMapper">
+    <resultMap id="BaseResultMap" type="com.atguigu.scw.bean.Type">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+
+    </resultMap>
+
+    <insert id="save" parameterType="com.atguigu.scw.bean.Type" >
+        insert into b_type (name)
+        values
+        (#{type.name})
+
+    </insert>
+    <select id="checkUser" resultMap="BaseResultMap">
+        select * from b_user
+        where
+        username=#{username}
+        and
+        password=#{password}
+
+    </select>
+
+
+</mapper>

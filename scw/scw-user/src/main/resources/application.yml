@@ -2,7 +2,7 @@ spring:
   application:
     name: scw-user
   datasource:
-    url: jdbc:mysql://localhost:3306/atcrowfunding?useSSL=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/atcrowfunding?useSSL=true&serverTimezone=UTC&characterEncoding=UTF-8
 #    url: jdbc:mysql://localhost:3306/atcrowfunding?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 123
