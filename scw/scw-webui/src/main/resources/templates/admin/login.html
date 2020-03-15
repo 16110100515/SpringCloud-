@@ -39,7 +39,7 @@
            </div>
 
            <div class="ui error mini message"></div>
-           <div class="ui mini negative message" th:unless="${#strings.isEmpty(errorMsg)}" th:text="${session.errorMsg}">用户名和密码错误</div>
+           <div class="ui mini negative message" th:unless="${#strings.isEmpty(session.errorMsg)}" th:text="${session.errorMsg}">用户名和密码错误</div>
 
          </form>
 

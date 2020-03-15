@@ -6,6 +6,7 @@ import com.atguigu.scw.bean.User;
 import com.atguigu.scw.common.bean.AppResponse;
 import com.atguigu.scw.consts.UserAppConsts;
 import com.atguigu.scw.service.UserService;
+import com.atguigu.scw.utils.MD5Utils;
 import com.atguigu.scw.vo.UserRespVo;
 import com.google.gson.Gson;
 import io.swagger.annotations.ApiOperation;
@@ -59,7 +60,7 @@ public class LoginController {
     public AppResponse<Object> login( String username, String password,
                         HttpSession session,
                         RedirectAttributes attributes) {
-        User user = userService.checkUser(username, password);
+        User user = userService.checkUser(username, MD5Utils.code(password));
         if (user != null) {
             user.setPassword(null);
             session.setAttribute("user",user);
