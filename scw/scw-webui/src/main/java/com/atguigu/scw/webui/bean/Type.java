@@ -7,6 +7,7 @@ import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.annotation.Id;
 
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +24,7 @@ public class Type {
     @Id
 //    @GeneratedValue
     private Long id;
+    @NotBlank
     private String name;
 
     private List<Blog> blogs = new ArrayList<>();

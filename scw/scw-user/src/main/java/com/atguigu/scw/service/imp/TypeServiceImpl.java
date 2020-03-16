@@ -7,14 +7,16 @@ import com.atguigu.scw.service.TypeService;
 //import com.lrm.NotFoundException;
 //import com.lrm.dao.TypeRepository;
 //import com.lrm.po.Type;
+import com.atguigu.scw.utils.Page;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by limi on 2017/10/16.
@@ -44,13 +46,27 @@ public class TypeServiceImpl implements TypeService {
 
     @Transactional
     @Override
-    public Page<Type> listType(Pageable pageable) {
-        return typeMapper.findAll(pageable);
+    public Page queryUserPage(Map<String,Object> paramMap) {
+
+        Page page = new Page((Integer)paramMap.get("pageno"),(Integer)paramMap.get("pagesize"));
+        Integer startIndex = page.getStartIndex();
+        paramMap.put("startIndex",startIndex);
+        List<Type> datas = typeMapper.queryList(paramMap);
+
+        page.setDatas(datas);
+        Integer totalsize = typeMapper.queryCount(paramMap);
+        page.setTotalsize(totalsize);
+
+        return page;
     }
 
-    @Override
-    public Type updateType(Long id, Type type) {
-        return null;
+    @Override//修改
+    public int updateType(Long id, Type type) {
+        Type t = typeMapper.findOne(id);
+        if(t==null){
+            throw new NotFoundException("id不存在");
+        }
+        return typeMapper.updateType(id,type);
     }
 
 
@@ -69,7 +85,7 @@ public class TypeServiceImpl implements TypeService {
 
     @Transactional
     @Override
-    public void deleteType(Long id) {
-        typeMapper.delete(id);
+    public int deleteType(Long id) {
+        return typeMapper.delete(id);
     }
 }

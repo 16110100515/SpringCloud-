@@ -61,7 +61,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr th:each="type,iterStat : ${page.content}">
+          <tr th:each="type,iterStat : ${page.datas}">
             <td th:text="${iterStat.count}">1</td>
             <td th:text="${type.name}">刻意练习清单</td>
             <td>
@@ -73,9 +73,28 @@
         <tfoot>
           <tr>
             <th colspan="6" >
-              <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
-                <a th:href="@{/admin/types(page=${page.number}-1)}" class="  item" th:unless="${page.first}">上一页</a>
-                <a th:href="@{/admin/types(page=${page.number}+1)}" class=" item" th:unless="${page.last}">下一页</a>
+              <div class="ui mini pagination menu" th:if="${page.totalno}>1">
+
+<!--                <li th:if="${page.pageno==1}"class="disabled"><a href="#">上一页</a></li>-->
+                <div th:if="${page.pageno!=1}">
+                  <a th:href="@{/admin/types(pageno=${page.pageno-1},pagesize=${page.pagesize})}" class="  item"  th:unless="${page.pageno==1}" >上一页</a>
+                </div>
+                      <div th:each="count:${#numbers.sequence(1,page.totalno)}" >
+<!--                        <li th:if="${page.pageno==type}"-->
+<!--                            class="active">-->
+                        <a th:href="@{/admin/types(pageno=${count},pagesize=${page.pagesize})}" class="  item" th:text="${count}" th:classappend="${page.pageno==count} ? 'active' ">123444</a>
+<!--                        </li>-->
+                      </div>
+
+<!--                <li th:if="${page.pageno==page.totalno}"class="item"><a href="#">下一页</a></li>-->
+                <div th:if="${page.pageno!=page.totalno}">
+                  <a th:href="@{/admin/types(pageno=${page.pageno+1},pagesize=${page.pagesize})}" class="  item"  th:unless="${page.pageno==page.totalno}">下一页</a>
+                </div>
+
+
+
+<!--                <a th:href="@{/admin/types(page=${page.number}-1)}" class="  item" th:unless="${page.first}">上一页</a>-->
+<!--                <a th:href="@{/admin/types(page=${page.number}+1)}" class=" item" th:unless="${page.last}">下一页</a>-->
               </div>
               <a href="#" th:href="@{/admin/types/input}"  class="ui mini right floated teal basic button">新增</a>
             </th>

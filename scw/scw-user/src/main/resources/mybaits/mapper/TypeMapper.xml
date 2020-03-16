@@ -11,8 +11,54 @@
         insert into b_type (name)
         values
         (#{type.name})
-
     </insert>
+
+
+    <select id="findOne" parameterType="Long" resultType="com.atguigu.scw.bean.Type" >
+        select id,name from b_type
+        where
+        id = #{id}
+    </select>
+
+    <select id="findByName" parameterType="string" resultType="com.atguigu.scw.bean.Type" >
+        select id,name from b_type
+        where
+        name = #{name}
+    </select>
+
+    <delete id="delete" parameterType="long">
+        delete from b_type
+        where
+        id = #{id}
+    </delete>
+
+    <update id="updateType" >
+        UPDATE  b_type
+        SET
+        name = #{type.name}
+        where
+        id =#{id}
+    </update>
+
+    <select id="queryList"  resultType="com.atguigu.scw.bean.Type">
+        select id, name
+        from b_type
+        <where>
+            <if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
+        </where>
+
+        limit #{startIndex},#{pagesize}
+    </select>
+    <select id="queryCount"  resultType="int">
+        select count(*)
+        from b_type
+        <where>
+            <if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
+        </where>
+
+    </select>
+
+
     <select id="checkUser" resultMap="BaseResultMap">
         select * from b_user
         where

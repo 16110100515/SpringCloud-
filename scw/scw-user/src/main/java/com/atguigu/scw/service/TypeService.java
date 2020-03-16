@@ -2,8 +2,11 @@ package com.atguigu.scw.service;
 
 //import com.lrm.po.Type;
 import com.atguigu.scw.bean.Type;
-import org.springframework.data.domain.Page;
+
+import com.atguigu.scw.utils.Page;
 import org.springframework.data.domain.Pageable;
+
+import java.util.Map;
 
 /**
  * Created by limi on 2017/10/16.
@@ -16,9 +19,9 @@ public interface TypeService {
 
     Type getTypeByName(String name);
 
-    Page<Type> listType(Pageable pageable);
+    Page queryUserPage(Map<String,Object> paramMap);
 
-    Type updateType(Long id, Type type);
+    int updateType(Long id, Type type);
 
-    void deleteType(Long id);
+    int deleteType(Long id);
 }
