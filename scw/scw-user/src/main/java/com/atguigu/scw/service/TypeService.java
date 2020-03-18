@@ -24,4 +24,8 @@ public interface TypeService {
     int updateType(Long id, Type type);
 
     int deleteType(Long id);
+
+//    Type getById(Long id);
+
+//    int editPost(Long id, Type type);
 }

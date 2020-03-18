@@ -59,5 +59,18 @@ public class TypeController {
         type.setName(name);
         return AppResponse.ok(typeService.saveType(type));
     }
+    @PostMapping("/getById")
+    @ResponseBody
+    AppResponse<Object> getById(@RequestParam("id") Long id){
+
+        return AppResponse.ok(typeService.getType(id));
+    }
+    @PostMapping("/editPost")
+    @ResponseBody
+    AppResponse<Object> editPost(@RequestParam("id") Long id,@RequestParam("name") String name){
+        Type type = new Type();
+        type.setName(name);
+        return AppResponse.ok(typeService.updateType(id,type));
+    }
 
 }

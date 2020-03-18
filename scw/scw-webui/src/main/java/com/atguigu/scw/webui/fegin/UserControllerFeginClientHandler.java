@@ -14,6 +14,16 @@ import java.util.List;
 @Service
 public class UserControllerFeginClientHandler implements UserControllerFeginClient {
     @Override
+    public AppResponse<Object> getById(Long id) {
+        return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
+    }
+
+    @Override
+    public AppResponse<Object> editPost(Long id, String name) {
+        return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
+    }
+
+    @Override
     public AppResponse<Object> posttype(String name) {
         return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
     }
