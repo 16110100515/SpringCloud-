@@ -8,13 +8,18 @@
   <component name="ChangeListManager">
     <list default="true" id="4f8dc817-1a03-4dc0-90fa-608ec39f5a2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/bean/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/bean/Blog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/controller/admin/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/controller/admin/TypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/mapper/TypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/mapper/TypeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/service/TypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/service/imp/TypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/java/com/atguigu/scw/service/imp/TypeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scw-user/src/main/resources/mybaits/mapper/TypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scw-user/src/main/resources/mybaits/mapper/TypeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/bean/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/bean/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/config/AppWebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/config/AppWebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/controller/user/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/controller/user/TypeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/fegin/UserControllerFeginClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/fegin/UserControllerFeginClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/fegin/UserControllerFeginClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/java/com/atguigu/scw/webui/fegin/UserControllerFeginClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/resources/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/resources/templates/admin/types-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scw-webui/src/main/resources/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/scw-webui/src/main/resources/templates/admin/blogs.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,9 +100,10 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.atguigu.scw.service" />
-      <recent name="com.atguigu.src.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workplace_idea\scw\scw-user\src\main\java\com\atguigu\scw" />
+      <recent name="C:\workplace_idea\scw\scw-user\src\main\resources\mybaits" />
+      <recent name="C:\workplace_idea\scw\scw-project\src\main\resources\mybaits" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\forstudy\Desktop\springcloudGIT管理\SpringCloud-\scw\scw-webui\src\main\resources\templates\admin" />
@@ -113,10 +119,9 @@
       <recent name="com.atguigu.src" />
       <recent name="com.atguigu.scw" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workplace_idea\scw\scw-user\src\main\java\com\atguigu\scw" />
-      <recent name="C:\workplace_idea\scw\scw-user\src\main\resources\mybaits" />
-      <recent name="C:\workplace_idea\scw\scw-project\src\main\resources\mybaits" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.scw.service" />
+      <recent name="com.atguigu.src.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -358,12 +363,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5be0534a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@50f6c280" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5be0534a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@24d42823" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@50f6c280" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@eb98f6a6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@50f6c280" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fc36408f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -430,6 +440,7 @@
       <workItem from="1584268457980" duration="5578000" />
       <workItem from="1584317520660" duration="22732000" />
       <workItem from="1584537618521" duration="5432000" />
+      <workItem from="1584622309570" duration="6042000" />
     </task>
     <task id="LOCAL-00001" summary="响应类封装加测试">
       <created>1583078214708</created>

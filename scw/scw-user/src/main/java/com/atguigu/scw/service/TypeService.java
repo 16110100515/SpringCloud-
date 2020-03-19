@@ -1,6 +1,7 @@
 package com.atguigu.scw.service;
 
 //import com.lrm.po.Type;
+import com.atguigu.scw.bean.Tag;
 import com.atguigu.scw.bean.Type;
 
 import com.atguigu.scw.utils.Page;
@@ -24,6 +25,16 @@ public interface TypeService {
     int updateType(Long id, Type type);
 
     int deleteType(Long id);
+
+    int deleteType_tag(Long id);
+
+    int updateType_tag(Long id, Tag tag);
+
+    Tag getType_tag(Long id);
+
+    int saveType_tag(Tag tag);
+
+    Page queryUserPage_tag(Map paramMap);
 
 //    Type getById(Long id);
 

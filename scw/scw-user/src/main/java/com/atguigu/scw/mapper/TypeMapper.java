@@ -1,5 +1,6 @@
 package com.atguigu.scw.mapper;
 
+import com.atguigu.scw.bean.Tag;
 import com.atguigu.scw.bean.Type;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Page;
@@ -29,4 +30,16 @@ public interface TypeMapper {
     List<Type> queryList(Map<String, Object> paramMap);
 
     Integer queryCount(Map<String, Object> paramMap);
+
+    int delete_tag(Long id);
+
+    int updateType_tag(@Param("id")Long id, @Param("tag")Tag tag);
+
+    Tag findOne_tag(Long id);
+
+    int save_tag(@Param("tag")Tag tag);
+
+    List<Tag> queryList_tag(Map paramMap);
+
+    Integer queryCount_tag(Map paramMap);
 }

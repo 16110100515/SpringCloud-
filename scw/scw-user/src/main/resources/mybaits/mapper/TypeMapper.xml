@@ -17,10 +17,20 @@
         values
         (#{type.name})
     </insert>
+    <insert id="save_tag" parameterType="com.atguigu.scw.bean.Tag" >
+        insert into b_tag (name)
+        values
+        (#{tag.name})
+    </insert>
 
 
     <select id="findOne" parameterType="Long" resultType="com.atguigu.scw.bean.Type" >
         select id,name from b_type
+        where
+        id = #{id}
+    </select>
+    <select id="findOne_tag" parameterType="Long" resultType="com.atguigu.scw.bean.Tag" >
+        select id,name from b_tag
         where
         id = #{id}
     </select>
@@ -36,11 +46,24 @@
         where
         id = #{id}
     </delete>
+    <delete id="delete_tag" parameterType="long">
+        delete from b_tag
+        where
+        id = #{id}
+    </delete>
 
     <update id="updateType" >
         UPDATE  b_type
         SET
         name = #{type.name}
+        where
+        id =#{id}
+    </update>
+
+    <update id="updateType_tag" >
+        UPDATE  b_tag
+        SET
+        name = #{tag.name}
         where
         id =#{id}
     </update>
@@ -54,9 +77,26 @@
 
         limit #{startIndex},#{pagesize}
     </select>
+    <select id="queryList_tag"  resultType="com.atguigu.scw.bean.Tag">
+        select id, name
+        from b_tag
+        <where>
+            <if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
+        </where>
+
+        limit #{startIndex},#{pagesize}
+    </select>
     <select id="queryCount"  resultType="int">
         select count(*)
         from b_type
+        <where>
+            <if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
+        </where>
+
+    </select>
+    <select id="queryCount_tag"  resultType="int">
+        select count(*)
+        from b_tag
         <where>
             <if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
         </where>

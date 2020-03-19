@@ -14,7 +14,22 @@ import java.util.List;
 @Service
 public class UserControllerFeginClientHandler implements UserControllerFeginClient {
     @Override
+    public AppResponse<Object> delete(Long id) {
+        return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
+    }
+
+    @Override
+    public AppResponse<Object> delete_tag(Long id) {
+        return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
+    }
+
+    @Override
     public AppResponse<Object> getById(Long id) {
+        return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
+    }
+
+    @Override
+    public AppResponse<Object> getById_tag(Long id) {
         return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
     }
 
@@ -24,12 +39,27 @@ public class UserControllerFeginClientHandler implements UserControllerFeginClie
     }
 
     @Override
+    public AppResponse<Object> editPost_tag(Long id, String name) {
+        return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
+    }
+
+    @Override
     public AppResponse<Object> posttype(String name) {
         return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
     }
 
     @Override
+    public AppResponse<Object> posttype_tag(String name) {
+        return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
+    }
+
+    @Override
     public AppResponse<Object> listByPage(int pageno, int pagesize,String queryText) {
+        return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
+    }
+
+    @Override
+    public AppResponse<Object> listByPage_tag(int pageno, int pagesize, String queryText) {
         return AppResponse.fail("加载失败","远程调用超时，连接失败fromUserControllerFeginClientHandler");
     }
 

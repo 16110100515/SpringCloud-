@@ -36,6 +36,10 @@ public class Blog {
     private boolean recommend;
     private Date createTime;
     private Date updateTime;
+    private Long typeId;
+    private int userId;
+    private String description;
+
 
     private Type type;
     private List<Tag> tags = new ArrayList<>();

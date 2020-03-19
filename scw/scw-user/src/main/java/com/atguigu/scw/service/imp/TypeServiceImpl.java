@@ -1,5 +1,6 @@
 package com.atguigu.scw.service.imp;
 
+import com.atguigu.scw.bean.Tag;
 import com.atguigu.scw.bean.Type;
 import com.atguigu.scw.exception.NotFoundException;
 import com.atguigu.scw.mapper.TypeMapper;
@@ -87,5 +88,43 @@ public class TypeServiceImpl implements TypeService {
     @Override
     public int deleteType(Long id) {
         return typeMapper.delete(id);
+    }
+
+    @Override
+    public int deleteType_tag(Long id) {
+        return typeMapper.delete_tag(id);
+    }
+
+    @Override
+    public int updateType_tag(Long id, Tag tag) {
+        Tag t = typeMapper.findOne_tag(id);
+        if(t==null){
+            throw new NotFoundException("id不存在");
+        }
+        return typeMapper.updateType_tag(id,tag);
+    }
+
+    @Override
+    public Tag getType_tag(Long id) {
+        return typeMapper.findOne_tag(id);
+    }
+
+    @Override
+    public int saveType_tag(Tag tag) {
+        return typeMapper.save_tag(tag);
+    }
+
+    @Override
+    public Page queryUserPage_tag(Map paramMap) {
+        Page page = new Page((Integer)paramMap.get("pageno"),(Integer)paramMap.get("pagesize"));
+        Integer startIndex = page.getStartIndex();
+        paramMap.put("startIndex",startIndex);
+        List<Tag> datas = typeMapper.queryList_tag(paramMap);
+
+        page.setDatas(datas);
+        Integer totalsize = typeMapper.queryCount_tag(paramMap);
+        page.setTotalsize(totalsize);
+
+        return page;
     }
 }
